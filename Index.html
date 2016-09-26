@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Eco</title>
+    <link rel="stylesheet" href="\node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="\node_modules\bootstrap-material-design-icons\css\material-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_top">
+            <div class="header_logo-container">
+                <a class="header_logo" href="/">
+                    <img src="/img/logo.png" style="height: 60px">
+                </a>
+
+                <a class="header_entire-site">
+                    <div>
+                        <i class="material-icons">dehaze</i> Весь сайт
+                    </div>
+                </a>
+            </div>
+
+            <div class="header_phone-number-container">
+                +375 (222) 299994 <br> +375 (29) 6144396
+            </div>
+        </div>
+        <div class="header_bottom">
+            <a href="#tmp1" class="header_menu-item">элемент меню 1</a>
+            <a href="#tmp2" class="header_menu-item">элемент меню 2</a>
+            <a href="#tmp3" class="header_menu-item">элемент меню 3</a>
+            <a href="#tmp4" class="header_menu-item">элемент меню 4</a>
+            <a href="#tmp5" class="header_menu-item">элемент меню 5</a>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div id="tmp1">Текст текст текст текст текст</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="tmp2">Текст текст текст текст текст</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="tmp3">Текст текст текст текст текст</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="tmp4">Текст текст текст текст тексt</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="tmp5">Текст текст текст текст текст</div>
+        </div>
+    </main>
+
+    <script src="\node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="\node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
+    <script>
+        function $scrollAnimation(a, b) {
+            var c = $('html, body'), d = $(a);
+            if(!d.length) return;
+            if(b) c.scrollTop(0);
+            c.animate({scrollTop: (d.offset().top - 142) + 'px'}, 800);
+        }
+        
+        $(document).on('click', 'a[href^="#"]', function() {
+            $scrollAnimation(this.getAttribute('href'));
+            return false;
+        });
+	</script>
+    
+</body>
+
+</html>
