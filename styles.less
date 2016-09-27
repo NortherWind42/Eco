@@ -19,58 +19,8 @@ a {
     }
 }
 
-.header {
-    position: fixed;
-    width: 100%;
-
-    &_top {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        height: 96px;           
-        background: white;
-    }
-
-    &_logo-container {
-        display: flex;
-        align-items: center;
-    }
-
-    &_logo {
-        margin: 0 15px;
-    }
-
-    &_entire-site {
-
-    }
-
-    &_bottom {
-        display: flex;  
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 46px;
-        background: rgba(238, 49, 36, 0.8);
-        
-        & .header_menu-item {
-            text-transform: uppercase;
-            color: white;
-
-            &:hover {
-                color: whitesmoke;
-            }
-        }
-    }
+@import "colors.less";
+@import "header.less";
+@import "main.less";
 
 
-    &_phone-number-container {
-        margin: 0 15px;
-    }
-}
-
-.main {
-    padding: 142px 0;
-}

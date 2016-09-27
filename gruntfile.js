@@ -1,8 +1,10 @@
 module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.initConfig({
+        
         less: {
             development: {
                 files: {
@@ -10,6 +12,7 @@ module.exports = function (grunt) {
                 }
             }
         },
+
         watch: {
             styles: {
                 files: ['*.less'],
@@ -17,6 +20,16 @@ module.exports = function (grunt) {
                 options: {
                     nospawn: true
                 }
+            }
+        },
+        
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    src: ['*.css', '!*.min.css'],
+                    ext: '.min.css'
+                }]
             }
         }
     });
