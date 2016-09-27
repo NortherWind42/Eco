@@ -2,9 +2,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
     grunt.initConfig({
-        
+
         less: {
             development: {
                 files: {
@@ -22,19 +23,29 @@ module.exports = function (grunt) {
                 }
             }
         },
-        
+
         cssmin: {
             target: {
                 files: [{
                     expand: true,
-                    src: ['*.css', '!*.min.css'],
-                    ext: '.min.css'
+                    src: 'styles.css'
                 }]
             }
-        }
+        },
+
+
+        autoprefixer: {
+            development: {
+                browsers: ['last 2 version', 'ie 9'],
+                expand: true,
+                flatten: true,
+                src: 'styles.css'
+            }
+        },
     });
 
 
     grunt.registerTask('default', ['less', 'watch']);
+    grunt.registerTask('build-css', ['less','autoprefixer','cssmin']);
 
 };
