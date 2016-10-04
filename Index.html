@@ -6,154 +6,148 @@
     <meta name="viewport" content="width=device-width">
 
     <title>Eco</title>
-    <link rel="stylesheet" href="\node_modules\bootstrap\dist\css\bootstrap.min.css">
-    <link rel="stylesheet" href="\node_modules\bootstrap-material-design-icons\css\material-icons.min.css">
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="\node_modules\normalize.css\normalize.css">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="header_top">
-            <div class="header_logo-container">
-                <a class="header_logo" href="/">
-                    <img src="/img/logo.png" style="height: 60px">
-                </a>
+        <div class="panel navbar navbar-default" style="max">
+            <div class="container-fluid">
+                <div class="navbar-header">
 
-                <a class="header_entire-site">
-                    <div>
-                        <i class="material-icons">dehaze</i> Весь сайт
-                    </div>
-                </a>
-            </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-            <div class="header_phone-number-container">
-                +375 (222) 299994 <br> +375 (29) 6144396
+                    <a class="navbar-brand header_logo-container" href="/">
+                        <img src="/img/logo.png" class="header_logo">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse navbar-inverse-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#aboutCompany" class="header_menu-item">О Компании</a></li>
+                        <li><a href="#staff" class="header_menu-item">Сотрудники</a></li>
+                        <li><a href="#" class="header_menu-item">Виды работ</a></li>
+                        <li><a href="#" class="header_menu-item">Экология</a></li>
+                        <li><a href="#" class="header_menu-item">Общестрой</a></li>
+                        <li><a href="#" class="header_menu-item">Эксплуатация</a></li>
+                        <li><a href="#" class="header_menu-item">Преимущества</a></li>
+                        <li><a href="#" class="header_menu-item">Заказчики</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="header_menu-item">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="header_bottom-area">
-            <a href="#tmp1" class="header_menu-item">элемент меню 1</a>
-            <a href="#tmp2" class="header_menu-item">элемент меню 2</a>
-            <a href="#tmp3" class="header_menu-item">элемент меню 3</a>
-            <a href="#tmp4" class="header_menu-item">элемент меню 4</a>
-            <a href="#tmp5" class="header_menu-item">элемент меню 5</a>
         </div>
     </header>
-    <main>
-        <div class="main">
-            <div id="tmp1">Текст текст текст текст текст</div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div id="tmp2">Текст текст текст текст текст</div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div id="tmp3">Текст текст текст текст текст</div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div id="tmp4">Текст текст текст текст тексt</div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div id="tmp5">Текст текст текст текст текст</div>
+
+    <main class="main container-fluid">
+        <div id="aboutCompany" class="aboutCompany row-fluid main_row-centered main_wrapper">
+            <div class="col-sm-6 col-xs-10 main_col-centered">
+                <div class="col-lg-4 col-md-12">
+                    <div class="aboutCompany_img-container">
+                        <img src="/img/businessCente.jpg">
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-12">
+                    <h3>
+                        О компании
+                    </h3>
+                    <p>
+                        Наша компания согласовывает проектную документацию в соответствующих государственных инстанциях и готова взять на себя обязательства
+                        в получении исходных данных, необходимых заказчику для выполнения проектных работ.
+                    </p>
+                    <p>
+                        Предоставление всего комплекса услуг в проектировании и эксплуатации – от обоснования размещения до природоохранных и технических
+                        документов в эксплуатации.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="staff" class="staff row-fluid main_row-centered main_wrapper">
+
+            <div class="col-sm-6 col-xs-10 main_col-centered">
+
+                <div class="col-lg-8 col-lg-push-4">
+                    <div class="col-lg-5 col-lg-offset-1">
+                        <div class="well container-fluid">
+                            <div class="staff_img-container">
+                                <img src="/img/staff1.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="well container-fluid">
+                            <div class="staff_img-container">
+                                <img src="/img/staff2.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-lg-offset-1">
+                        <div class="well container-fluid">
+                            <div class="staff_img-container">
+                                <img src="/img/staff3.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="well container-fluid ">
+                            <div class="staff_img-container">
+                                <img src="/img/staff4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-lg-pull-8">
+                    <h3>
+                        Наши сотрудники
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum optio sequi, ad nihil quia distinctio dignissimos quo odio
+                        non suscipit, laudantium sunt! Eveniet animi, vel eum. At, est assumenda dolore?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum optio sequi, ad nihil quia distinctio dignissimos quo odio
+                        non suscipit, laudantium sunt! Eveniet animi, vel eum. At, est assumenda dolore? Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit. Ipsum optio sequi, ad nihil quia distinctio dignissimos quo
+                        odio non suscipit, laudantium sunt! Eveniet animi, vel eum. At, est assumenda dolore?
+                    </p>
+
+
+                </div>
+
+            </div>
+
         </div>
     </main>
 
     <script src="\node_modules\jquery\dist\jquery.min.js"></script>
     <script src="\node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    <script src="\node_modules\bootstrap-material-design\dist\js\material.min.js"></script>
+    <script src="\node_modules\bootstrap-material-design\dist\js\ripples.min.js"></script>
 
     <script>
+        //scrollAnimation script
         function $scrollAnimation(a, b) {
+            var topMargin = 80;
+
             var c = $('html, body'), d = $(a);
             if(!d.length) return;
             if(b) c.scrollTop(0);
-            c.animate({scrollTop: (d.offset().top - 142) + 'px'}, 800);
+            c.animate({scrollTop: (d.offset().top - topMargin) + 'px'}, 800);
         }
         
         $(document).on('click', 'a[href^="#"]', function() {
@@ -161,7 +155,18 @@
             return false;
         });
 	</script>
-    
+
+    <script>
+        //close nav on click script
+        $('.nav a').on('click', function(){
+            if($('.navbar-toggle').css('display') !='none') {
+             $('.navbar-toggle').click() 
+            }
+        });
+    </script>
+
+    <script>$.material.init()</script>
+
 </body>
 
 </html>

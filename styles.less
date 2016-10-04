@@ -1,26 +1,11 @@
-a {
-    color: black;
-    &:link {
-        color: black;
-        text-decoration: none;
-    }
-    &:visited {
-        text-decoration: none; 
-        color: black;
-    }
-    &:hover {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;     
-    }
-    &:active {
-        color: black;
-        text-decoration: none; 
-    }
-}
+@import "/node_modules/normalize.css/normalize.css";
+
+@import "bootstrap_custom.less";
+
+@import "/node_modules/bootstrap-material-design/dist/css/ripples.min.css";
+@import "bootstrap-material-design_custom.less";
 
 @import "colors.less";
 @import "header.less";
 @import "main.less";
-
 
