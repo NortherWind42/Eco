@@ -10,201 +10,300 @@
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="panel navbar navbar-default" style="max">
-            <div class="container-fluid">
-                <div class="navbar-header">
+    <eco>
+        <header class="header">
+            <div class="panel navbar navbar-default" style="margin-bottom: 0;">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                        <a class="navbar-brand header_logo-container" href="/">
+                            <img src="/img/logo.png" class="header_logo">
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse navbar-inverse-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#about-company" class="header_menu-item">О Компании</a></li>
+                            <li><a href="#staff" class="header_menu-item">Сотрудники</a></li>
+                            <li><a href="#types-of-jobs" class="header_menu-item">Виды работ</a></li>
+                            <li><a href="#ecology" class="header_menu-item">Экология</a></li>
+                            <li><a href="#exploitation" class="header_menu-item">Эксплуатация</a></li>
+                            <li><a href="#сivil-engineering" class="header_menu-item">Общестрой</a></li>
+                            <li><a href="#advantages" class="header_menu-item">Преимущества</a></li>
+                            <li><a href="#customers" class="header_menu-item">Заказчики</a></li>
+                        </ul>
 
-                    <a class="navbar-brand header_logo-container" href="/">
-                        <img src="/img/logo.png" class="header_logo">
-                    </a>
-                </div>
-                <div class="navbar-collapse collapse navbar-inverse-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#about-company" class="header_menu-item">О Компании</a></li>
-                        <li><a href="#staff" class="header_menu-item">Сотрудники</a></li>
-                        <li><a href="#types-of-jobs" class="header_menu-item">Виды работ</a></li>
-                        <li><a href="#ecology" class="header_menu-item">Экология</a></li>
-                        <li><a href="#staff" class="header_menu-item">Общестрой</a></li>
-                        <li><a href="#staff" class="header_menu-item">Эксплуатация</a></li>
-                        <li><a href="#staff" class="header_menu-item">Преимущества</a></li>
-                        <li><a href="#staff" class="header_menu-item">Заказчики</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#staff" class="header_menu-item">Контакты</a></li>
-                    </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#contacts" class="header_menu-item">Контакты</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="main container">
+        <main class="main">
 
-        <div id="about-company" class="about-company row main_wrapper">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="col-sm-4">
-                    <div class="about-company_img-container">
-                        <img src="/img/businessCente.jpg">
+            <div class="main_scrollable-area">
+
+                <div id="about-company" class="about-company container main_wrapper">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="col-sm-4">
+                            <div class="about-company_img-container">
+                                <img src="/img/businessCente.jpg">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8">
+                            <h3>
+                                О компании
+                            </h3>
+                            <p class="main_text-container">
+                                Наша компания согласовывает проектную документацию в соответствующих государственных инстанциях и готова взять на себя обязательства
+                                в получении исходных данных, необходимых заказчику для выполнения проектных работ.
+                            </p>
+                            <p class="main_text-container">
+                                Предоставление всего комплекса услуг в проектировании и эксплуатации – от обоснования размещения до природоохранных и технических
+                                документов в эксплуатации.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-sm-8">
-                    <h3>
-                        О компании
-                    </h3>
-                    <p class="main_text-container">
-                        Наша компания согласовывает проектную документацию в соответствующих государственных инстанциях и готова взять на себя обязательства
-                        в получении исходных данных, необходимых заказчику для выполнения проектных работ.
-                    </p>
-                    <p class="main_text-container">
-                        Предоставление всего комплекса услуг в проектировании и эксплуатации – от обоснования размещения до природоохранных и технических
-                        документов в эксплуатации.
-                    </p>
-                </div>
-            </div>
-        </div>
+                <div id="staff" class="staff container main_wrapper">
+                    <div class="col-md-10 col-md-offset-1">
 
-        <div id="staff" class="staff row main_wrapper">
-            <div class="col-md-10 col-md-offset-1">
+                        <div class="col-md-8 col-md-push-4 container">
 
-                <div class="col-md-8 col-md-push-4 container">
-
-                    <div class="col-sm-5 col-sm-offset-1">
-                        <div class="well container-fluid staff_animation-container">
-                            <div class="staff_img-container">
-                                <img src="/img/staff1.png">
-                                <span class="staff_caption-animation">
+                            <div class="col-sm-5 col-sm-offset-1">
+                                <div class="well container-fluid staff_animation-container">
+                                    <div class="staff_img-container">
+                                        <img src="/img/staff1.png">
+                                        <span class="staff_caption-animation">
                                     <h6>Исполнительный директор</h6>
                                     <p class="staff_caption-primary">Дмитрий Новиков</p>
                                 </span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-sm-5">
-                        <div class="well container-fluid staff_animation-container">
-                            <div class="staff_img-container">
-                                <img src="/img/staff2.png">
-                                <span class="staff_caption-animation">
+                            <div class="col-sm-5">
+                                <div class="well container-fluid staff_animation-container">
+                                    <div class="staff_img-container">
+                                        <img src="/img/staff2.png">
+                                        <span class="staff_caption-animation">
                                     <h6>Главный менеджер</h6>
                                     <p class="staff_caption-primary">Алексей Азаров</p>
                                 </span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-sm-5 col-sm-offset-1">
-                        <div class="well container-fluid staff_animation-container">
-                            <div class="staff_img-container">
-                                <img src="/img/staff3.png">
-                            </div>
-                            <span class="staff_caption-animation">
+                            <div class="col-sm-5 col-sm-offset-1">
+                                <div class="well container-fluid staff_animation-container">
+                                    <div class="staff_img-container">
+                                        <img src="/img/staff3.png">
+                                    </div>
+                                    <span class="staff_caption-animation">
                                 <h6>Финансовый директор</h6>
                                 <p class="staff_caption-primary">Дмитрий Сергеев</p>
                             </span>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-5">
-                        <div class="well container-fluid staff_animation-container">
-                            <div class="staff_img-container">
-                                <img src="/img/staff4.png">
+                                </div>
                             </div>
-                            <span class="staff_caption-animation">
+
+                            <div class="col-sm-5">
+                                <div class="well container-fluid staff_animation-container">
+                                    <div class="staff_img-container">
+                                        <img src="/img/staff4.png">
+                                    </div>
+                                    <span class="staff_caption-animation">
                                 <h6>Главный бухгалтер</h6>
                                 <p class="staff_caption-primary">Елена Кольцевая</p>
                             </span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-md-pull-8 container-fluid">
+                            <h3>
+                                Наши сотрудники
+                            </h3>
+                            <p class="main_text-container">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum optio sequi, ad nihil quia distinctio dignissimos quo odio
+                                non suscipit, laudantium sunt! Eveniet animi, vel eum. At, est assumenda dolore?
+                            </p>
+                            <p class="main_text-container">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum optio sequi, ad nihil quia distinctio dignissimos quo odio
+                                non suscipit, laudantium sunt! Eveniet animi, vel eum. At, est assumenda dolore? Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Ipsum optio sequi, ad nihil quia distinctio
+                                dignissimos quo odio non suscipit, laudantium sunt! Eveniet animi, vel eum. At, est assumenda
+                                dolore?
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="types-of-jobs" class="types-of-jobs container main_wrapper">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h3 class="types-of-jobs_header">Какие услуги мы предоставляем</h3>
+
+                        <div class="types-of-jobs_bottom-container">
+
+                            <div class="col-sm-3 col-sm-offset-2 col-md-offset-0">
+                                <div class="types-of-jobs_image-container">
+                                    <img src="/img/ecology-type.png">
+                                </div>
+                                <h4 class="types-of-jobs_under-image-text">Экология</h4>
+                            </div>
+
+                            <div class="col-sm-3 col-md-offset-1">
+                                <div class="types-of-jobs_image-container">
+                                    <img src="/img/plan-type.png">
+                                </div>
+                                <h4 class="types-of-jobs_under-image-text">Эксплуатация</h4>
+                            </div>
+
+                            <div class="col-sm-3 col-md-offset-1">
+                                <div class="types-of-jobs_image-container">
+                                    <img src="/img/building-type.png">
+                                </div>
+                                <h4 class="types-of-jobs_under-image-text">Общестрой</h4>
+                            </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="col-md-4 col-md-pull-8 container-fluid">
-                    <h3>
-                        Наши сотрудники
-                    </h3>
-                    <p class="main_text-container">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum optio sequi, ad nihil quia distinctio dignissimos quo odio
-                        non suscipit, laudantium sunt! Eveniet animi, vel eum. At, est assumenda dolore?
-                    </p>
-                    <p class="main_text-container">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum optio sequi, ad nihil quia distinctio dignissimos quo odio
-                        non suscipit, laudantium sunt! Eveniet animi, vel eum. At, est assumenda dolore? Lorem ipsum dolor
-                        sit amet, consectetur adipisicing elit. Ipsum optio sequi, ad nihil quia distinctio dignissimos quo
-                        odio non suscipit, laudantium sunt! Eveniet animi, vel eum. At, est assumenda dolore?
-                    </p>
+                <div id="ecology" class="ecology">
+                    <div class="container">
 
+                        <div class="well">
+
+                            <h3>В области экологии</h3>
+
+                        </div>
+
+                    </div>
                 </div>
+
+                <div id="exploitation" class="exploitation">
+                    <div class="container">
+
+                        <div class="well">
+
+                            <h3>В области эксплуатации</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="civil-engineering" class="civil-engineering">
+                    <div class="container">
+
+                        <div class="well">
+
+                            <h3>В области общестроя</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="advantages" class="advantages container main_wrapper">
+                    <div class="well">
+
+                        <h3>Преимущества</h3>
+
+                    </div>
+                </div>
+
+                <div id="customers" class="customers container main_wrapper">
+                    <div class="well">
+
+                        <h3>Заказчики</h3>
+
+                    </div>
+                </div>
+
+                <div id="contacts" class="contacts container main_wrapper">
+                    <div class="well">
+
+                        <h3>Контакты</h3>
+
+                    </div>
+                </div>
+
+                <footer class="footer-distributed">
+
+                    <div class="footer-left">
+
+                        <h3>Эко<span>логия</span></h3>
+
+                        <p class="footer-links">
+                            <a href="#">Link1</a> ·
+                            <a href="#">Link2</a> ·
+                            <a href="#">Link3</a> ·
+                            <a href="#">Link4</a> ·
+                            <a href="#">Link5</a>
+                        </p>
+
+                        <p class="footer-company-name">Eco &copy; 2016</p>
+                    </div>
+
+                    <div class="footer-center">
+
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p><span>Верхне-Сенная, 4</span> Россия, Смоленск</p>
+                        </div>
+
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p>+375 (222) 299994</p>
+                        </div>
+
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:support@company.com">npf_ekolog@tut.by</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-right">
+
+                        <p class="footer-company-about">
+                            <span>Social</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis
+                            velit, eu auctor lacus vehicula sit amet.
+                        </p>
+
+                        <div class="footer-icons">
+
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-vk"></i></a>
+                            <a href="//github.com/NortherWind42/Eco" target="blank"><i class="fa fa-github"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </footer>
 
             </div>
-        </div>
-        
-        <div id="types-of-jobs" class="types-of-jobs row main_wrapper">
-            <div class="col-md-10 col-md-offset-1">
-                <h3 class="types-of-jobs_header">Какие услуги мы предоставляем</h3>
+            
+        </main>
 
-                <div class="types-of-jobs_bottom-container">
-
-                    <div class="col-sm-3 col-sm-offset-2 col-md-offset-0">
-                        <div class="types-of-jobs_image-container">
-                            <img src="/img/ecology-type.png">
-                        </div>
-                        <h4 class="types-of-jobs_under-image-text">Экология</h4>
-                    </div>
-
-                    <div class="col-sm-3 col-md-offset-1">
-                        <div class="types-of-jobs_image-container">
-                            <img src="/img/plan-type.png">
-                        </div>
-                        <h4 class="types-of-jobs_under-image-text">Эксплуатация</h4>
-                    </div>
-
-                    <div class="col-sm-3 col-md-offset-1">
-                        <div class="types-of-jobs_image-container">
-                            <img src="/img/building-type.png">
-                        </div>
-                        <h4 class="types-of-jobs_under-image-text">Общестрой</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="ecology" class="ecology row main_wrapper">
-
-            <div class="ecology_img-container">
-                <img src="/img/ecology.jpg">
-            </div>
-
-            <!--<div class="col-lg-6 col-lg-offset-6 col-md-8 col-sm-10 col-xs-12">
-
-                <div class="well ecology_info-container">
-                    <h3>Экология</h3>
-                    <div>
-                        <p class="main_text-container">Государственная экологическая экспертиза</p>
-                        <p class="main_text-container">Обращение с отходами производства</p>
-                        <p class="main_text-container">Охрана атмосферного воздуха</p>
-                        <p class="main_text-container">Охрана водных ресурсов</p>
-                        <p class="main_text-container">Охрана окружающей среды</p>
-                        <p class="main_text-container">Охрана растительного мира</p>
-                    </div>
-                </div>
-
-            </div>-->
-
-        </div>
-    </main>
+    </eco>
 
     <script src="\node_modules\jquery\dist\jquery.min.js"></script>
     <script src="\node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
@@ -212,19 +311,10 @@
     <script src="\node_modules\bootstrap-material-design\dist\js\ripples.min.js"></script>
 
     <script>
-        //scrollAnimation script
-        function $scrollAnimation(a, b) {
-            var topMargin = 60;
-
-            var c = $('html, body'), d = $(a);
-            if(!d.length) return;
-            if(b) c.scrollTop(0);
-            c.animate({scrollTop: (d.offset().top - topMargin) + 'px'}, 800);
-        }
-        
-        $(document).on('click', 'a[href^="#"]', function() {
-            $scrollAnimation(this.getAttribute('href'));
-            return false;
+        //scroll animation script
+        $(document).on('click', 'a', function(event) {
+            $('main').animate({ scrollTop: $( $.attr(this, 'href') ).position().top - $(".main_scrollable-area").position().top }, 800);
+            event.preventDefault();
         });
 	</script>
 
