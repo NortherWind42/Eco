@@ -4,10 +4,23 @@
 @header_menu-item_hover-color: @Gallery;
 
 .header {
+    background: @yellow-400;
+    &_bottom {
+        margin-bottom: 0;
+    }
+
     width: 100%;
 
     &_logo-container {
-       padding: 5px;
+        width: 100px;
+        transition: width 0.5s, opacity 1s;
+        opacity: 1;
+        padding: 5px;
+
+        &.invisible {
+            width: 0;
+            opacity: 0;
+        }
     }
 
     &_logo {
@@ -19,5 +32,44 @@
         font-size: 16px;
         letter-spacing: 0.16px;
         text-transform: uppercase;
+    }
+}
+
+.header_top {
+    display: flex;
+    height: 100px;
+    transition: height 1s; 
+
+    &.invisible {
+        height: 0;
+    }
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+
+        &-left {
+            display: flex;
+            img {
+                margin: 0 20px;  
+            }
+        }
+
+        &-right {
+ 
+            margin: 20px;
+            font-size: 16px;
+        }
+    }
+
+    &_title {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0.16px;
+        margin: auto;
     }
 }
