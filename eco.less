@@ -3,7 +3,24 @@ eco {
     flex-flow: column;
     width: 100%;
     height: 100%;
+
+    &-header {
+        display: block;
+    }
+
+    &-main {
+        display: block; 
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &-footer {
+        display: block;   
+    }
 }
+
 
 @import "header.less";
 @import "main.less";
+@import "footer.less";

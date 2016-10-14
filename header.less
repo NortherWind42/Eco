@@ -1,75 +1,142 @@
-@bottom-area_background: @Carnation;
-@top_background: white;
-@header_menu-item_color: white;
-@header_menu-item_hover-color: @Gallery;
 
 .header {
     background: @yellow-400;
-    &_bottom {
-        margin-bottom: 0;
-    }
 
-    width: 100%;
-
-    &_logo-container {
-        width: 100px;
-        transition: width 0.5s, opacity 1s;
-        opacity: 1;
-        padding: 5px;
+    &_top {
+        max-height: 500px;
+        transition: max-height 0.25s ease-in;
+        overflow: hidden;
 
         &.invisible {
-            width: 0;
-            opacity: 0;
+            max-height: 0;
+            transition: max-height 0.15s ease-out;
         }
+
+        &-container {
+            float: left;
+        }
+
+        &-logo {
+            display: inline-block;
+            margin: 10px;
+            margin-left: 30px;
+        }
+
+        &-title {
+            display: inline-block;
+            text-transform: uppercase;
+            vertical-align: middle;
+            color: @Jacarta;
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 0.16px;
+        }
+
+        &-contact-info {
+            float: right;
+            margin-right: 30px;
+            text-align: right;
+            margin-top: 30px;
+            font-size: 19px;
+            line-height: 1em;
+            font-weight: 400;
+        }
+
+        &-phone {
+            color: @Jacarta;
+            margin-bottom: 5px;
+        }
+
+        &-email {
+            color: @Jacarta;
+            margin-top: 5px;
+        }
+
     }
 
-    &_logo {
-        height: 100%;
-    }
+    &_bottom {
 
-    &_menu-item {
-        font-weight: 400;
-        font-size: 16px;
-        letter-spacing: 0.16px;
-        text-transform: uppercase;
-    }
-}
+        & .panel {
+            margin-bottom: 0px;
+        }
 
-.header_top {
-    display: flex;
-    height: 100px;
-    transition: height 1s; 
+        &-logo {
+            height: 100%;
+           
 
-    &.invisible {
-        height: 0;
-    }
+            &-container {
+                max-width: 150px;
+                transition: max-width 0.5s, opacity 1s;
+                opacity: 1;
+                
+                & .navbar-brand  {
+                    padding: 5px;
+                }
 
-    &_content {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 100%;
-
-        &-left {
-            display: flex;
-            img {
-                margin: 0 20px;  
+                &.invisible {
+                    max-width: 0;
+                    opacity: 0;
+                }
             }
         }
 
-        &-right {
- 
-            margin: 20px;
+        &-menu-item {
+            font-weight: 400;
             font-size: 16px;
+            letter-spacing: 0.16px;
+            text-transform: uppercase;
         }
     }
 
-    &_title {
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 20px;
-        letter-spacing: 0.16px;
-        margin: auto;
+}
+
+
+@media screen and (max-width: 850px) {
+    .header_top-contact-info {
+        float: none;
+        text-align: center;
+        margin-top: 0px;
+        margin-right: 0px;
     }
+
+    .header_top-phone {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .header_top-email {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .header_top-logo {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px; 
+    }
+
+    .header_top-title {
+        display: block;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .header_top-title-transfer {
+        display: none;
+    }
+
+    .header_top-container {
+        float: none;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .header_top-phone,
+    .header_top-email {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }   
 }
