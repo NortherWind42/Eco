@@ -1,3 +1,22 @@
 .customers { 
-    
+
+    &_title {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    &_image-container {
+        position: relative;
+        text-align: center;
+        height: 250px;
+
+        img {
+            position: absolute;
+            height: auto;
+            max-width: 100%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            left: 50%;
+        }
+    }
 }
