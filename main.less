@@ -10,7 +10,36 @@
 
     &_section {
         padding: 20px 0;
+
+        &-with-picture-at-top {
+            padding-bottom: 20px;
+           
+
+            & .picture-container {
+                position: relative;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                height: 300px;
+                width: 100%;
+                background-position: right center;
+
+                & .title {
+                    position: absolute;
+                    bottom: 0;
+                    margin: 0;
+                    padding: 20px;
+                    width: 100%;
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    color: @brand-primary;
+                }
+            }
+
+
+        }
     }
+
 }
 
 @import "about-company.less";
