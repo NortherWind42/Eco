@@ -1,6 +1,16 @@
 .ecology {
+    margin: 0 30px;
+    margin-bottom: 45px; //на всю страницу при 16:9
+
     &_picture-container {
         &:extend(.picture-container all);
         background: url("/img/ecology.jpg");
     }
+}
+
+@media (width: 1920px) {
+
+	.ecology {
+        margin-bottom: 0;
+	}
 }

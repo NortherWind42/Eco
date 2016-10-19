@@ -34,17 +34,32 @@
 
         &-contact-info {
             float: right;
-            margin-right: 30px;
-            text-align: right;
-            margin-top: 30px;
+            margin-right: 15px;
+            margin-top: 10px; 
+            text-align: left;
             font-size: 19px;
             line-height: 1em;
             font-weight: 400;
         }
 
-        &-phone {
+
+
+        &-mob-phone {
             color: @Jacarta;
             margin-bottom: 5px;
+
+            & * {
+                vertical-align: middle;
+            }
+        }
+
+        &-static-phone {
+            color: @Jacarta;
+            margin-bottom: 5px;
+
+            & * {
+                vertical-align: middle;
+            }
         }
 
         &-email {
@@ -53,6 +68,23 @@
 
             a {
                 color: @Jacarta;
+                &:link {
+                    text-decoration: none;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+                &:visited {
+                    text-decoration: none;  
+                }
+                &:active {
+                     text-decoration: none;
+                }
+                
+            }
+
+            & * {
+                vertical-align: middle;
             }
         }
 
@@ -96,22 +128,19 @@
 
 
 @media screen and (max-width: 850px) {
+
     .header_top-contact-info {
-        float: none;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
         text-align: center;
-        margin-top: 0px;
-        margin-right: 0px;
     }
 
-    .header_top-phone {
-        display: inline-block;
-        margin-right: 20px;
-        margin-bottom: 10px;
-    }
-
+    .header_top-mob-phone,
+    .header_top-static-phone,
     .header_top-email {
         display: inline-block;
-        margin-bottom: 10px;
+        margin-left: 5px;
     }
 
     .header_top-logo {
@@ -137,10 +166,12 @@
 }
 
 @media screen and (max-width: 390px) {
-    .header_top-phone,
+
+    .header_top-mob-phone,
+    .header_top-static-phone,
     .header_top-email {
         display: block;
         margin: auto;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }   
 }

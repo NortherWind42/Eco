@@ -18,6 +18,7 @@
   "dependencies": {
     "bootstrap": "3.3.7",
     "bootstrap-material-design": "0.5.10",
+    "flag-icon-css": "^2.4.0",
     "jquery": "3.1.1",
     "normalize.css": "4.2.0"
   }
