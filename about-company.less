@@ -1,4 +1,6 @@
 .about-company {
+    display: flex;
+    align-items: center;
 
     &_img-container {
         text-align: center;
@@ -8,3 +10,13 @@
         max-width: 100%
     }
 }
+
+@media (max-width: @screen-xs-max) { 
+    .about-company {
+        flex-direction: column;
+    }
+
+    .about-company_img-container {
+        margin-bottom: 20px;
+    }
+ }

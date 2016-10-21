@@ -1,4 +1,6 @@
 .staff {
+    display: flex;
+    align-items: center;
 
     &_img-container {
         text-align: center;
@@ -46,3 +48,9 @@
         bottom: -35%;
     }
 }
+
+@media (max-width: @screen-sm-max) { 
+    .staff {
+        display: block;
+    }
+ }
