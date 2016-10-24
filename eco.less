@@ -1,15 +1,18 @@
 eco {
     display: flex;
+    display: -ms-flexbox;  
     flex-flow: column;
     width: 100%;
     height: 100%;
 
     &-header {
         display: block;
+        z-index: 100;
     }
 
     &-main {
         display: block; 
+        z-index: 90;
         width: 100%;
         height: 100%;
         overflow: hidden;
