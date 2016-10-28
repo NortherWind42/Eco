@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "description": "card site",
   "scripts": {
-    "serve": "lite-server -c server-cfg.json"
+    "serve": "concurrently \"lite-server\" \"grunt\""
   },
   "author": "Oleg Vasilyev",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "3.1.0",
     "grunt": "1.0.1",
     "grunt-autoprefixer": "3.0.4",
     "grunt-contrib-cssmin": "1.0.2",
